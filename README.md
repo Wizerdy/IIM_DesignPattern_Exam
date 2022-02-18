@@ -20,7 +20,7 @@
 + Ajout d'une variable dans Health "CanTakeDamage"
 + Quand on utilise le bouclier, on passe cette variable à false pour ne plus prendre de dégâts.
 + Dans l'input, on désactive la possibilté de tirer tant qu'on utilise le bouclier.
-  + \+ Création d'une classe ActiveSwitcher pour changer le sprite à afficher.
+  + \+ Création d'une classe ActiveSwitcher pour changer le sprite à afficher en fonction de l'action du joueur.
   + \+ Création d'un script "ShieldOrientation" pour changer l'orientation du bouclier en fonction d'où regarde le joueur.
   + \+ Création fait main d'un pixel art de bouclier.
 
@@ -32,7 +32,7 @@
 + Création du prefab Key comprenant les interfaces IGrabbable et IUsable.
 + Création du prefab Potion comprenant les interfaces IGrabbable et IUsable.
 + Changement de l'interface IHealth et des classes l'incluant pour y inclure la fonction Heal et l'event OnHeal.
-  + \+ Gestion d'affichage du sprite de l'objet lorsqu'on n'utilise pas le bouclier, où qu'on a pas tirer depuis un certain temps (EntityHoldingRenderer).
+  + \+ Gestion d'affichage du sprite de l'objet lorsqu'on n'utilise pas le bouclier, ou que le joueur n'a pas tiré depuis un certain temps (EntityHoldingRenderer).
   + \+ Création fait main d'un pixel art de potion et de clé.
 
 
