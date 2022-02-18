@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 93002997245717589}
   - component: {fileID: 93002997245717588}
+  - component: {fileID: 3882197599671085582}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -41,7 +42,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -55,8 +56,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 1.6}
+  m_Size: {x: 0.72870135, y: 0.46386364}
   m_EdgeRadius: 0
+--- !u!114 &3882197599671085582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93002997245717586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 696d58f5d10a3654596f721a9147a66e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 93002997460992769}
+  door: {fileID: 0}
+  useNumber: 1
 --- !u!1 &93002997460992798
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,7 +131,7 @@ Transform:
   m_GameObject: {fileID: 93002998257246619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 93002997460992769}
   m_RootOrder: 0
@@ -159,8 +175,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_SortingOrder: 30
+  m_Sprite: {fileID: -6261238793195855058, guid: fc62c55028f761746a51e71d95bff8f3, type: 3}
   m_Color: {r: 1, g: 0.9690536, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0

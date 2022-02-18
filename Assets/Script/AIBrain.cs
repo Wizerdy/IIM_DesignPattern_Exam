@@ -6,7 +6,7 @@ public class AIBrain : MonoBehaviour
 {
     [SerializeField] EntityFire _fire;
 
-    [SerializeField] PlayerEntity _playerTarget;
+    [SerializeField] PlayerReference _playerTarget;
     [SerializeField] float _detectionRadius = 10f;
 
     [SerializeField] bool _drawGizmo;
@@ -16,8 +16,8 @@ public class AIBrain : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(1f, 3f));
-
-            if(Vector3.Distance(_playerTarget.transform.position, transform.position) < _detectionRadius) 
+            if (_playerTarget == null) { continue; }
+            if(Vector3.Distance(_playerTarget.Instance.transform.position, transform.position) < _detectionRadius) 
                 _fire.FireBullet(2);
         }
     }
